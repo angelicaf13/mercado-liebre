@@ -1,0 +1,390 @@
+:root{
+  --amarillo: #EAC926;
+  --azul: #03264C;
+  --celeste: #1259c3;
+  --grisOscuro: #666;
+  --grisClaro: #ebebeb;
+  --verde: #39b54a; 
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  }
+
+body {
+  
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+.header-div{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+input {
+  width: 20%;
+}
+
+nav {
+  margin-top: 10px;
+  display: none;
+  padding: 10px;
+}
+
+.topnav input{
+  width: 80%;
+  border: none;
+    border-radius: 5px;
+    min-height: 30px;
+    padding: 5px;
+}
+
+.topnav button{
+  border: none;
+    min-height: 30px;
+    width: 20px
+}
+
+.banner-img {
+  width: 100%;
+  display: block;
+}
+
+main{
+  margin: auto;
+  width: 100%;
+  background-color: #ebebeb;
+}
+
+header{
+  background-color: #eac926;
+  padding-bottom: 6px;
+}
+
+header > p {
+  text-align: center;
+}
+
+article > img {
+  width: 50vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+}
+
+.titular {
+  font-size: 24px;
+  padding: 20px;
+  color: #666;
+  margin: auto;
+}
+
+.ic-envio {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  color: #39b54a;
+  border: solid 2px #39b54a;
+  border-radius: 50%;
+  margin: auto;
+  right: 20px;
+  top: -10px;
+}
+
+.ic-envio > i {
+  text-align: center;
+  margin-top: 15%;
+  font-size: 1.2em;
+  
+  transition: all 0.5s;
+}
+
+.precio {
+  font-size: 18px;
+  display: inline-block;
+}
+
+.descuento,
+.descripcion {
+  font-size: 16px;
+}
+
+.descuento {
+  color: #39b54a;
+  display: inline-block;
+  margin: auto;
+}
+
+.descripcion {
+  display: none;
+  padding-bottom: 20px;
+  transition: 0.5s;
+}
+
+.datos-producto {
+  position: relative;
+  border-top: solid 1px #ebebeb;
+  padding: 15px;
+}
+
+.burger-menu {
+  font-size: 7px;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #1259c3;
+  color: white;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.burger-menu i {
+  font-size: 2em;
+}
+
+.credit-card,
+.gift,
+.shield {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #1259c3;
+}
+
+footer > section {
+  width: 250px;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+}
+
+footer {
+  background-color: white;
+  padding: 10px;
+  display: block;
+}
+
+article {
+  text-align: center;
+  display: block;
+  margin: 10px;
+}
+
+.basado,
+.ofertas {
+  display: block;
+  padding: 10px;
+  margin: auto;
+}
+
+section > article {
+  background-color: white;
+}
+
+.topnav {
+  text-align: center;
+  padding-top: 20px;
+  width: 50%;
+}
+
+.logo {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #03264C;
+}
+
+li i {
+  color: #03264C;
+}
+
+.bottom-header-div{
+  text-align: center;
+  padding: 15px;
+}
+
+.main-login{
+  padding: 0px 20px;
+}
+
+/* Form */
+.register-form {
+  padding: 20px 16px;
+  width: 80%;
+  display: block;
+  margin: auto;
+  max-width: 450px;
+}
+
+.input-register{
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 4px;
+  border: none;
+  height: 28px;
+  padding-left: 8px;
+}
+
+.control-form {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.control-form h4 {
+  margin-bottom: 10px;
+}
+
+.register-checkbox{
+  display: flex;
+  width: 150px;
+}
+
+.register-checkboxes{
+  display: flex;
+  justify-content: center;
+}
+
+.register-button{
+  border: none;
+  background-color: #03264C;
+  color: white;
+  padding: 8px;
+  margin: 6px;
+  flex-grow: 0.5;
+  max-width: 180px;
+}
+
+.register-button:hover{
+  background-color: #0022AA;
+}
+
+.register-buttons{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+article:hover{
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  
+}
+
+article:hover  .descripcion{
+  color:black;
+}
+
+article:hover .ic-envio > i{
+  transform: rotate(-90deg);
+}
+
+.header-bar{
+  
+  padding-top: 10px;
+}
+
+/* Mobile */
+
+
+/* Tablet */
+@media (min-width: 361px){
+
+  .topnav{
+    padding-top: 0;
+  }
+
+  .header-bar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .descripcion {
+    display: block;
+    color: white;
+  }
+
+  article{
+    transition: all 0.5s;
+    flex-grow: 0.50;
+  }
+
+  .burger-menu{
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 0.3;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .basado, .ofertas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  article > img {
+    width: 25vw;
+  }
+
+}
+
+/* Desktop */
+@media (min-width: 769px){
+  .basado, .ofertas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  article {
+    flex-grow: 0.25;
+  }
+
+  article > img {
+    width: 15vw;
+  }
+
+  footer{
+    display:flex;
+    flex-wrap: wrap;
+  }
+
+  footer i:hover{
+    animation: iconHover 0.5s forwards;
+  }
+
+}
+
+@keyframes iconHover {
+  0%{}
+  100%{
+    color: var(--amarillo);
+  }
+  
+}
